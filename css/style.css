@@ -151,5 +151,7 @@ footer ul {
     margin: 0 auto;
     text-align: center;
     align-items: flex-end;
+    font-family: 'Roboto';
+    font-style: normal;
     color: #00B0FC;
 }
