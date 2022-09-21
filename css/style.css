@@ -39,7 +39,7 @@ nav {
     justify-content: end;
     width: 100%;
 }
-ul {
+nav ul {
     margin-left: auto;
     display: flex;
     justify-content: end;
@@ -115,7 +115,7 @@ h1 {
     width: 210px;
     left: 50%;
 }
-button {
+.heroImg button {
     position: relative;
     left: 40%;
     top: -40px;
@@ -223,20 +223,35 @@ button {
 }
 
 .myWork p {
+    height: 210px;
     color: white;
 }
 
 .myWork button {
-    margin-top: 50px;
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    background: linear-gradient(180deg, #00B0FC 37.29%, rgba(0, 176, 252, 0.4) 50%, #00B0FC 62.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /*button inner line*/
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(255, 225, 118, 0.34));
+    border-radius: 7px;
 }
 
 footer {
     background-color: #262626;
+    margin-top: 244px;
     height: 235px;
     padding: 0;
     display: block;
     align-items: center;
-    justify-content: end;
+    
 }
 footer ul {
     width: 100%;
@@ -246,8 +261,19 @@ footer ul {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    align-items: flex-end;
     font-family: 'Roboto';
     font-style: normal;
     color: #00B0FC;
+}
+.footerLogo {
+    margin: 0;
+    top: 100px;
+    position: absolute;
+    right: 202px;
+}
+@media only screen and (max-width: 600){
+    .flexContainer{
+        flex-direction: column;
+        width: 100%;
+    }
 }
