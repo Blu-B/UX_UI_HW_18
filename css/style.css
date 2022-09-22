@@ -142,6 +142,13 @@ h1 {
     color: black;
 }
 
+#skillsGrid {
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+    "userResearch userEmpathy qualitativeInterviews"
+}
+
 .skillsDiv img {
     width: auto;
     height: 160px;
@@ -150,8 +157,6 @@ h1 {
 .flexContainer {
     display: flex;
     justify-content: center;
-
-    /*<!--  My UX Skills section coded using CSS flex -->*/
 }
 
 .flexContainer div {
@@ -192,6 +197,13 @@ h1 {
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
+}
+
+#toolsGrid {
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+    "tools1 tools2 tools3"
 }
 
 .toolsIKnow h3 {
@@ -271,9 +283,20 @@ footer ul {
     position: absolute;
     right: 202px;
 }
-@media only screen and (max-width: 600){
-    .flexContainer{
-        flex-direction: column;
-        width: 100%;
+@media only screen and (max-width: 600px) {
+    #skillsGrid {
+        grid-template-areas:
+        "userResearch"
+        "userEmpathy"
+        "qualitativeInterviews"
+        ;
+    }
+    
+    #toolsGrid {
+        grid-template-areas:
+        "tools1" 
+        "tools2" 
+        "tools3"
+        ;
     }
 }
