@@ -1,7 +1,7 @@
 html {
     height: 100%;
     margin: 0;
-    background-image: url("../Images/Background\ Stripe.png");
+    background-image: url("../Images/Desktop\ -\ 16.svg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     -webkit-background-size: cover;
@@ -24,6 +24,7 @@ body {
     text-align: center;
     vertical-align: middle;
     justify-content: space-between;
+    
 
 }
 
@@ -34,6 +35,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
+    margin-bottom: 244px;
 }
 
 .logo {
@@ -58,6 +60,7 @@ nav ul {
     align-items: center;
     padding-right: 60px;
     list-style: none;
+    
 }
 
 li {
@@ -86,19 +89,14 @@ li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    
 }
 
 .heroImg {
     width: 100%;
-
     height: 100vh;
-    margin-top: 244px;
     padding: 0;
-    background-image: url("../Images/Hero\ Background\ with\ Stripe.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
     /*display: flex;
     align-items: flex-end;
     height: 700px;
@@ -119,10 +117,14 @@ h1 {
 
 .content{
     height: 100%;
+    width: 90%;
+    max-width: 10000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 .content p {
-    margin-bottom: 50px;
     width: 36%;
     font-family: 'Roboto';
     font-style: normal;
@@ -137,10 +139,8 @@ h1 {
     left: 50%;
 }*/
 .heroImg button {
-    position: absolute;
-    left: 44%;
-    top: 80%;
-    transform: (-50%, -50%);
+    margin-top: 50px;
+    display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -312,10 +312,16 @@ footer ul {
     position: relative;
     justify-content: flex-end;
 }*/
+@media only screen and (max-width: 800px) {
+    .blu {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 1700px) {
     .heroImg {
         height: auto;
+        background-color: #262626;
     }
 
     .content h1 {
@@ -326,12 +332,8 @@ footer ul {
         font-size: 28px;
     }
 }
-@media only screen and (max-width: 800px) {
-    .blu {
-        display: none;
-    }
-}
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1170px) {
 
     #skillsGrid {
         grid-template-areas:
